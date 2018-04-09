@@ -13,11 +13,13 @@
   <p><%= category.name %></p>
 <% end %>
 <p>Users Who Have Commented</p>
+
 <ul>
   <% @commenters.each do |commenter| %>
     <li><%= link_to commenter.username, user_path(commenter) %></li>
   <% end %>
 </ul>
+
 <p>Add a comment</p>
 <%= form_for @comment do |f| %>
   <%= f.label :select_a_user %>
