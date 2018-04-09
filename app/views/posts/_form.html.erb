@@ -3,8 +3,15 @@
     <%= f.label :content %>
     <%= f.xt_field :content %>
   </p>
-  
+
   <p>
     <%= f.label :content %>
     <%= f.xt_field :content %>
   </p>
+
+  <%= Category.each do |c| %>
+    <p>
+      <label for="category_id_1">Cool</label> <input type="checkbox" name="post[category_ids]" value="1">
+    </p>
+  <%= end %>
+<%= end %>
